@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6179c6c815af7a6f16acd1daa5925299 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6179c6c815af7a6f16acd1daa5925299" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6179c6c815af7a6f16acd1daa5925299 = L.map(
+                "map_6179c6c815af7a6f16acd1daa5925299",
+                {
+                    center: [1.349551, 103.812823],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0780e8777f89d6fe01cbab33537f92dc = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6179c6c815af7a6f16acd1daa5925299);
+        
+    
+            var marker_887f83b2e65a9d8732ce5993d5f9933c = L.marker(
+                [1.361187, 103.9387975],
+                {}
+            ).addTo(map_6179c6c815af7a6f16acd1daa5925299);
+        
+    
+            var icon_6d1a05d81bfdc2a7ae32c4a7c202e00c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_887f83b2e65a9d8732ce5993d5f9933c.setIcon(icon_6d1a05d81bfdc2a7ae32c4a7c202e00c);
+        
+    
+        var popup_3cf767a2c6ffc9a02715c2b38609fe5e = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_9bc56f54305254bb97511917b6d4441d = $(`<div id="html_9bc56f54305254bb97511917b6d4441d" style="width: 100.0%; height: 100.0%;">     <!DOCTYPE html>     <html>     <h3>Our Long Awaited Cafe</h3>     <p>the ice cream was good!</p>     <img src= 'beauty_1676803468093.JPG' width=100px>     </html>       </div>`)[0];
+                popup_3cf767a2c6ffc9a02715c2b38609fe5e.setContent(html_9bc56f54305254bb97511917b6d4441d);
+            
+        
+
+        marker_887f83b2e65a9d8732ce5993d5f9933c.bindPopup(popup_3cf767a2c6ffc9a02715c2b38609fe5e)
+        ;
+
+        
+    
+    
+            marker_887f83b2e65a9d8732ce5993d5f9933c.bindTooltip(
+                `<div>
+                     Our House
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_2b6c146e26099fd5024d08bf686fc86a = L.marker(
+                [1.3271244, 103.7217817],
+                {}
+            ).addTo(map_6179c6c815af7a6f16acd1daa5925299);
+        
+    
+            var icon_e263fe4119c19e3686ee87cc562a656b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2b6c146e26099fd5024d08bf686fc86a.setIcon(icon_e263fe4119c19e3686ee87cc562a656b);
+        
+    
+        var popup_9277a2f6b12b3fee2c6e70af464426b6 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_9bc56f54305254bb97511917b6d4441d = $(`<div id="html_9bc56f54305254bb97511917b6d4441d" style="width: 100.0%; height: 100.0%;">     <!DOCTYPE html>     <html>     <h3>Our Long Awaited Cafe</h3>     <p>the ice cream was good!</p>     <img src= 'beauty_1676803468093.JPG' width=100px>     </html>       </div>`)[0];
+                popup_9277a2f6b12b3fee2c6e70af464426b6.setContent(html_9bc56f54305254bb97511917b6d4441d);
+            
+        
+
+        marker_2b6c146e26099fd5024d08bf686fc86a.bindPopup(popup_9277a2f6b12b3fee2c6e70af464426b6)
+        ;
+
+        
+    
+    
+            marker_2b6c146e26099fd5024d08bf686fc86a.bindTooltip(
+                `<div>
+                     Jesleen House
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_27b4beacb37bf0cedc3136d407286cb0 = L.marker(
+                [1.3039797, 103.8320323],
+                {}
+            ).addTo(map_6179c6c815af7a6f16acd1daa5925299);
+        
+    
+            var icon_59df2a78cf77b6175b9ce3d881fd9ce4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_27b4beacb37bf0cedc3136d407286cb0.setIcon(icon_59df2a78cf77b6175b9ce3d881fd9ce4);
+        
+    
+        var popup_d063c65633510c80717a3ee59483dcbe = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_9bc56f54305254bb97511917b6d4441d = $(`<div id="html_9bc56f54305254bb97511917b6d4441d" style="width: 100.0%; height: 100.0%;">     <!DOCTYPE html>     <html>     <h3>Our Long Awaited Cafe</h3>     <p>the ice cream was good!</p>     <img src= 'beauty_1676803468093.JPG' width=100px>     </html>       </div>`)[0];
+                popup_d063c65633510c80717a3ee59483dcbe.setContent(html_9bc56f54305254bb97511917b6d4441d);
+            
+        
+
+        marker_27b4beacb37bf0cedc3136d407286cb0.bindPopup(popup_d063c65633510c80717a3ee59483dcbe)
+        ;
+
+        
+    
+    
+            marker_27b4beacb37bf0cedc3136d407286cb0.bindTooltip(
+                `<div>
+                     Ion Orchard
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_bbb4d3ace910af7902a21e3b013cdda1 = L.marker(
+                [1.3564166, 103.87187],
+                {}
+            ).addTo(map_6179c6c815af7a6f16acd1daa5925299);
+        
+    
+            var icon_9ca4fb98e2af5d310856b78c81f4db6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bbb4d3ace910af7902a21e3b013cdda1.setIcon(icon_9ca4fb98e2af5d310856b78c81f4db6e);
+        
+    
+        var popup_6857f15083cd852dbf108f5d6ca929ed = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_9bc56f54305254bb97511917b6d4441d = $(`<div id="html_9bc56f54305254bb97511917b6d4441d" style="width: 100.0%; height: 100.0%;">     <!DOCTYPE html>     <html>     <h3>Our Long Awaited Cafe</h3>     <p>the ice cream was good!</p>     <img src= 'beauty_1676803468093.JPG' width=100px>     </html>       </div>`)[0];
+                popup_6857f15083cd852dbf108f5d6ca929ed.setContent(html_9bc56f54305254bb97511917b6d4441d);
+            
+        
+
+        marker_bbb4d3ace910af7902a21e3b013cdda1.bindPopup(popup_6857f15083cd852dbf108f5d6ca929ed)
+        ;
+
+        
+    
+    
+            marker_bbb4d3ace910af7902a21e3b013cdda1.bindTooltip(
+                `<div>
+                     Serangoon Community Park
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_65ff0b2d90644063e107f348fb19c25e = L.marker(
+                [1.277770201, 103.8463307],
+                {}
+            ).addTo(map_6179c6c815af7a6f16acd1daa5925299);
+        
+    
+            var icon_aaeb143cd33c0e269aaa7fa9abe7aaa9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_65ff0b2d90644063e107f348fb19c25e.setIcon(icon_aaeb143cd33c0e269aaa7fa9abe7aaa9);
+        
+    
+        var popup_96e7f52bf9fa382b4402e6d063dc03a1 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_9bc56f54305254bb97511917b6d4441d = $(`<div id="html_9bc56f54305254bb97511917b6d4441d" style="width: 100.0%; height: 100.0%;">     <!DOCTYPE html>     <html>     <h3>Our Long Awaited Cafe</h3>     <p>the ice cream was good!</p>     <img src= 'beauty_1676803468093.JPG' width=100px>     </html>       </div>`)[0];
+                popup_96e7f52bf9fa382b4402e6d063dc03a1.setContent(html_9bc56f54305254bb97511917b6d4441d);
+            
+        
+
+        marker_65ff0b2d90644063e107f348fb19c25e.bindPopup(popup_96e7f52bf9fa382b4402e6d063dc03a1)
+        ;
+
+        
+    
+    
+            marker_65ff0b2d90644063e107f348fb19c25e.bindTooltip(
+                `<div>
+                     Cafe Kremes
+                 </div>`,
+                {"sticky": false}
+            );
+        
+    
+            var marker_3831446fe91320a8726a2516331d53f2 = L.marker(
+                [1.3657894, 103.8669217],
+                {}
+            ).addTo(map_6179c6c815af7a6f16acd1daa5925299);
+        
+    
+            var icon_11e6c3647676e3bf8b00485d254465c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_3831446fe91320a8726a2516331d53f2.setIcon(icon_11e6c3647676e3bf8b00485d254465c9);
+        
+    
+        var popup_6b700e95cf5289fc9c70ae4746f15a39 = L.popup({"maxWidth": 500});
+
+        
+            
+                var html_9bc56f54305254bb97511917b6d4441d = $(`<div id="html_9bc56f54305254bb97511917b6d4441d" style="width: 100.0%; height: 100.0%;">     <!DOCTYPE html>     <html>     <h3>Our Long Awaited Cafe</h3>     <p>the ice cream was good!</p>     <img src= 'beauty_1676803468093.JPG' width=100px>     </html>       </div>`)[0];
+                popup_6b700e95cf5289fc9c70ae4746f15a39.setContent(html_9bc56f54305254bb97511917b6d4441d);
+            
+        
+
+        marker_3831446fe91320a8726a2516331d53f2.bindPopup(popup_6b700e95cf5289fc9c70ae4746f15a39)
+        ;
+
+        
+    
+    
+            marker_3831446fe91320a8726a2516331d53f2.bindTooltip(
+                `<div>
+                     Serangoon Gardens
+                 </div>`,
+                {"sticky": false}
+            );
+        
+</script>
+</html>
